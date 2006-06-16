@@ -1,0 +1,9 @@
+category: Doc Gnome
+requires: libxml2 libxslt pylibxml2 python scrollkeeper
+sdesc: "GNOME documentation build tools and stylesheets"
+ldesc: "gnome-doc-utils is a collection of documentation utilities for
+the Gnome project.  Notably, it contains utilities for building
+documentation and all auxiliary files in your source tree, and it
+contains the DocBook XSLT stylesheets that were once distributed with
+Yelp.  Starting with Gnome 2.8, Yelp will require gnome-doc-utils for
+the XSLT."
