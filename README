@@ -7,21 +7,21 @@ XSLT stylesheets that were once distributed with Yelp.  Starting with
 Gnome 2.8, Yelp will require gnome-doc-utils for the XSLT.
 
 Runtime requirements:
-  libxml2-2.6.26-1
-  libxslt-1.1.17-1
-  pylibxml2-2.6.26-1
-  python-2.4.3-1
+  libxml2-2.6.28-1
+  libxslt-1.1.20-1
+  python-2.5.1-1
+  python-libxml2-2.6.28-1
   scrollkeeper-0.3.14-2
 
 Build requirements:
-  cygwin-1.5.21-2
-  autoconf2.5-2.60-1
-  automake1.6-1.6.3-3
-  cygport-0.2.6-1
-  gawk-3.1.5-2
+  cygwin-1.5.24-2
+  autoconf2.5-2.61-1
+  automake1.9-1.9.6-2
+  cygport-0.2.11-1
+  gawk-3.1.5-4
   make-3.81-1
   pkg-config-0.21-1
-  sed-4.1.5-1
+  sed-4.1.5-2
 
 Canonical website:
   http://www.gnome.org/
@@ -32,33 +32,35 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gnome-doc-utils-0.8.0-X-src.tar.bz2
+  unpack gnome-doc-utils-0.10.3-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gnome-doc-utils-0.8.0-X.cygport all
+  cygport ./gnome-doc-utils-0.10.3-X.cygport all
 
 This will create:
-  /usr/src/gnome-doc-utils-0.8.0-X-src.tar.bz2
-  /usr/src/gnome-doc-utils-0.8.0-X.tar.bz2
+  /usr/src/gnome-doc-utils-0.10.3-X-src.tar.bz2
+  /usr/src/gnome-doc-utils-0.10.3-X.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary package:
 
   /etc/postinstall/gnome-doc-utils.sh
+  /etc/preremove/gnome-doc-utils.sh
   /usr/bin/gnome-doc-prepare
+  /usr/bin/gnome-doc-tool
   /usr/bin/xml2po
   /usr/lib/pkgconfig/gnome-doc-utils.pc
   /usr/lib/pkgconfig/xml2po.pc
   /usr/share/aclocal/gnome-doc-utils.m4
-  /usr/share/doc/Cygwin/gnome-doc-utils-0.8.0.README
-  /usr/share/doc/gnome-doc-utils-0.8.0/AUTHORS
-  /usr/share/doc/gnome-doc-utils-0.8.0/COPYING
-  /usr/share/doc/gnome-doc-utils-0.8.0/ChangeLog
-  /usr/share/doc/gnome-doc-utils-0.8.0/INSTALL
-  /usr/share/doc/gnome-doc-utils-0.8.0/NEWS
-  /usr/share/doc/gnome-doc-utils-0.8.0/README
+  /usr/share/doc/Cygwin/gnome-doc-utils-0.10.3.README
+  /usr/share/doc/gnome-doc-utils-0.10.3/AUTHORS
+  /usr/share/doc/gnome-doc-utils-0.10.3/COPYING
+  /usr/share/doc/gnome-doc-utils-0.10.3/ChangeLog
+  /usr/share/doc/gnome-doc-utils-0.10.3/INSTALL
+  /usr/share/doc/gnome-doc-utils-0.10.3/NEWS
+  /usr/share/doc/gnome-doc-utils-0.10.3/README
   /usr/share/gnome-doc-utils/gnome-doc-utils.make
   /usr/share/gnome-doc-utils/template-document.xml
   /usr/share/gnome-doc-utils/template.make
@@ -90,7 +92,6 @@ Files included in the binary package:
   /usr/share/gnome/help/gnome-doc-xslt/C/db2html-media.xml
   /usr/share/gnome/help/gnome-doc-xslt/C/db2html-qanda.xml
   /usr/share/gnome/help/gnome-doc-xslt/C/db2html-refentry.xml
-  /usr/share/gnome/help/gnome-doc-xslt/C/db2html-suppressed.xml
   /usr/share/gnome/help/gnome-doc-xslt/C/db2html-table.xml
   /usr/share/gnome/help/gnome-doc-xslt/C/db2html-title.xml
   /usr/share/gnome/help/gnome-doc-xslt/C/db2html-xref.xml
@@ -101,7 +102,6 @@ Files included in the binary package:
   /usr/share/gnome/help/gnome-doc-xslt/C/l10n-numbers.xml
   /usr/share/gnome/help/gnome-doc-xslt/C/legal.xml
   /usr/share/gnome/help/gnome-doc-xslt/C/translating.xml
-  /usr/share/gnome/help/gnome-doc-xslt/C/xsldoc.xml
   /usr/share/locale/ar/LC_MESSAGES/gnome-doc-utils.mo
   /usr/share/locale/bg/LC_MESSAGES/gnome-doc-utils.mo
   /usr/share/locale/bn/LC_MESSAGES/gnome-doc-utils.mo
@@ -142,6 +142,7 @@ Files included in the binary package:
   /usr/share/locale/nl/LC_MESSAGES/gnome-doc-utils.mo
   /usr/share/locale/or/LC_MESSAGES/gnome-doc-utils.mo
   /usr/share/locale/pa/LC_MESSAGES/gnome-doc-utils.mo
+  /usr/share/locale/pl/LC_MESSAGES/gnome-doc-utils.mo
   /usr/share/locale/pt/LC_MESSAGES/gnome-doc-utils.mo
   /usr/share/locale/pt_BR/LC_MESSAGES/gnome-doc-utils.mo
   /usr/share/locale/ro/LC_MESSAGES/gnome-doc-utils.mo
@@ -198,11 +199,11 @@ Files included in the binary package:
   /usr/share/xml/gnome/xslt/docbook/omf/db2omf.xsl
   /usr/share/xml/gnome/xslt/docbook/utils/chunks.xsl
   /usr/share/xml/gnome/xslt/docbook/utils/credits.xsl
+  /usr/share/xml/gnome/xslt/docbook/utils/figures.xsl
   /usr/share/xml/gnome/xslt/docbook/utils/ids.xsl
   /usr/share/xml/gnome/xslt/gettext/gettext.xsl
   /usr/share/xml/gnome/xslt/gettext/l10n-numbers.xsl
   /usr/share/xml/gnome/xslt/gettext/l10n.xml
-  /usr/share/xml/gnome/xslt/xsldoc/xsldoc.xsl
   /usr/share/xml2po/docbook.py
   /usr/share/xml2po/docbook.pyc
   /usr/share/xml2po/docbook.pyo
@@ -215,10 +216,16 @@ Files included in the binary package:
   /usr/share/xml2po/ubuntu.py
   /usr/share/xml2po/ubuntu.pyc
   /usr/share/xml2po/ubuntu.pyo
+  /usr/share/xml2po/xhtml.py
+  /usr/share/xml2po/xhtml.pyc
+  /usr/share/xml2po/xhtml.pyo
 
 ------------------
 
 Port Notes:
+
+----- version 0.10.3-1 -----
+Version bump for GNOME 2.18.
 
 ----- version 0.8.0-1 -----
 Version bump for GNOME 2.16.
