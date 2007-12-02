@@ -7,17 +7,17 @@ XSLT stylesheets that were once distributed with Yelp.  Starting with
 Gnome 2.8, Yelp will require gnome-doc-utils for the XSLT.
 
 Runtime requirements:
-  libxml2-2.6.28-1
-  libxslt-1.1.20-1
-  python-2.5.1-1
-  python-libxml2-2.6.28-1
-  scrollkeeper-0.3.14-2
+  libxml2-2.6.30-1
+  libxslt-1.1.22-1
+  python-2.5.1-3
+  python-libxml2-2.6.30-1
+  rarian-0.6.0-1
 
 Build requirements:
   cygwin-1.5.24-2
   autoconf2.5-2.61-1
   automake1.9-1.9.6-2
-  cygport-0.2.11-1
+  cygport-0.3.7-1
   gawk-3.1.5-4
   make-3.81-1
   pkg-config-0.21-1
@@ -32,15 +32,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gnome-doc-utils-0.10.3-X-src.tar.bz2
+  unpack gnome-doc-utils-0.12.0-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gnome-doc-utils-0.10.3-X.cygport all
+  cygport ./gnome-doc-utils-0.12.0-X.cygport all
 
 This will create:
-  /usr/src/gnome-doc-utils-0.10.3-X-src.tar.bz2
-  /usr/src/gnome-doc-utils-0.10.3-X.tar.bz2
+  /usr/src/gnome-doc-utils-0.12.0-X-src.tar.bz2
+  /usr/src/gnome-doc-utils-0.12.0-X.tar.bz2
 
 -------------------------------------------
 
@@ -54,17 +54,39 @@ Files included in the binary package:
   /usr/lib/pkgconfig/gnome-doc-utils.pc
   /usr/lib/pkgconfig/xml2po.pc
   /usr/share/aclocal/gnome-doc-utils.m4
-  /usr/share/doc/Cygwin/gnome-doc-utils-0.10.3.README
-  /usr/share/doc/gnome-doc-utils-0.10.3/AUTHORS
-  /usr/share/doc/gnome-doc-utils-0.10.3/COPYING
-  /usr/share/doc/gnome-doc-utils-0.10.3/ChangeLog
-  /usr/share/doc/gnome-doc-utils-0.10.3/INSTALL
-  /usr/share/doc/gnome-doc-utils-0.10.3/NEWS
-  /usr/share/doc/gnome-doc-utils-0.10.3/README
+  /usr/share/doc/Cygwin/gnome-doc-utils-0.12.0.README
+  /usr/share/doc/gnome-doc-utils-0.12.0/AUTHORS
+  /usr/share/doc/gnome-doc-utils-0.12.0/COPYING
+  /usr/share/doc/gnome-doc-utils-0.12.0/ChangeLog
+  /usr/share/doc/gnome-doc-utils-0.12.0/INSTALL
+  /usr/share/doc/gnome-doc-utils-0.12.0/NEWS
+  /usr/share/doc/gnome-doc-utils-0.12.0/README
   /usr/share/gnome-doc-utils/gnome-doc-utils.make
+  /usr/share/gnome-doc-utils/icons/hicolor/48x48/admon-bug.png
+  /usr/share/gnome-doc-utils/icons/hicolor/48x48/admon-caution.png
+  /usr/share/gnome-doc-utils/icons/hicolor/48x48/admon-important.png
+  /usr/share/gnome-doc-utils/icons/hicolor/48x48/admon-note.png
+  /usr/share/gnome-doc-utils/icons/hicolor/48x48/admon-tip.png
+  /usr/share/gnome-doc-utils/icons/hicolor/48x48/admon-warning.png
+  /usr/share/gnome-doc-utils/icons/hicolor/scalable/admon-bug.svg
+  /usr/share/gnome-doc-utils/icons/hicolor/scalable/admon-caution.svg
+  /usr/share/gnome-doc-utils/icons/hicolor/scalable/admon-important.svg
+  /usr/share/gnome-doc-utils/icons/hicolor/scalable/admon-note.svg
+  /usr/share/gnome-doc-utils/icons/hicolor/scalable/admon-tip.svg
+  /usr/share/gnome-doc-utils/icons/hicolor/scalable/admon-warning.svg
   /usr/share/gnome-doc-utils/template-document.xml
   /usr/share/gnome-doc-utils/template.make
   /usr/share/gnome-doc-utils/template.omf.in
+  /usr/share/gnome-doc-utils/templates/gnome-app-template.xml
+  /usr/share/gnome-doc-utils/templates/gnome-applet-template.xml
+  /usr/share/gnome-doc-utils/templates/legal.xml
+  /usr/share/gnome-doc-utils/watermarks/watermark-blockquote-00AB.png
+  /usr/share/gnome-doc-utils/watermarks/watermark-blockquote-00BB.png
+  /usr/share/gnome-doc-utils/watermarks/watermark-blockquote-201C.png
+  /usr/share/gnome-doc-utils/watermarks/watermark-blockquote-201D.png
+  /usr/share/gnome-doc-utils/watermarks/watermark-blockquote-201E.png
+  /usr/share/gnome-doc-utils/watermarks/watermark-code-python.png
+  /usr/share/gnome-doc-utils/watermarks/watermark-code.png
   /usr/share/gnome/help/gnome-doc-make/C/gnome-doc-make.xml
   /usr/share/gnome/help/gnome-doc-make/C/legal.xml
   /usr/share/gnome/help/gnome-doc-make/C/make-ref.xml
@@ -73,7 +95,6 @@ Files included in the binary package:
   /usr/share/gnome/help/gnome-doc-xslt/C/db-label.xml
   /usr/share/gnome/help/gnome-doc-xslt/C/db-title.xml
   /usr/share/gnome/help/gnome-doc-xslt/C/db-xref.xml
-  /usr/share/gnome/help/gnome-doc-xslt/C/db2html-admon.xml
   /usr/share/gnome/help/gnome-doc-xslt/C/db2html-autotoc.xml
   /usr/share/gnome/help/gnome-doc-xslt/C/db2html-bibliography.xml
   /usr/share/gnome/help/gnome-doc-xslt/C/db2html-block.xml
@@ -85,6 +106,7 @@ Files included in the binary package:
   /usr/share/gnome/help/gnome-doc-xslt/C/db2html-ebnf.xml
   /usr/share/gnome/help/gnome-doc-xslt/C/db2html-footnote.xml
   /usr/share/gnome/help/gnome-doc-xslt/C/db2html-funcsynopsis.xml
+  /usr/share/gnome/help/gnome-doc-xslt/C/db2html-index.xml
   /usr/share/gnome/help/gnome-doc-xslt/C/db2html-info.xml
   /usr/share/gnome/help/gnome-doc-xslt/C/db2html-inline.xml
   /usr/share/gnome/help/gnome-doc-xslt/C/db2html-l10n.xml
@@ -97,10 +119,12 @@ Files included in the binary package:
   /usr/share/gnome/help/gnome-doc-xslt/C/db2html-xref.xml
   /usr/share/gnome/help/gnome-doc-xslt/C/db2html.xml
   /usr/share/gnome/help/gnome-doc-xslt/C/db2omf.xml
+  /usr/share/gnome/help/gnome-doc-xslt/C/db2xhtml.xml
   /usr/share/gnome/help/gnome-doc-xslt/C/gettext.xml
   /usr/share/gnome/help/gnome-doc-xslt/C/gnome-doc-xslt.xml
   /usr/share/gnome/help/gnome-doc-xslt/C/l10n-numbers.xml
   /usr/share/gnome/help/gnome-doc-xslt/C/legal.xml
+  /usr/share/gnome/help/gnome-doc-xslt/C/theme.xml
   /usr/share/gnome/help/gnome-doc-xslt/C/translating.xml
   /usr/share/locale/ar/LC_MESSAGES/gnome-doc-utils.mo
   /usr/share/locale/bg/LC_MESSAGES/gnome-doc-utils.mo
@@ -140,6 +164,7 @@ Files included in the binary package:
   /usr/share/locale/nb/LC_MESSAGES/gnome-doc-utils.mo
   /usr/share/locale/ne/LC_MESSAGES/gnome-doc-utils.mo
   /usr/share/locale/nl/LC_MESSAGES/gnome-doc-utils.mo
+  /usr/share/locale/oc/LC_MESSAGES/gnome-doc-utils.mo
   /usr/share/locale/or/LC_MESSAGES/gnome-doc-utils.mo
   /usr/share/locale/pa/LC_MESSAGES/gnome-doc-utils.mo
   /usr/share/locale/pl/LC_MESSAGES/gnome-doc-utils.mo
@@ -167,12 +192,12 @@ Files included in the binary package:
   /usr/share/man/man1/xml2po.1.gz
   /usr/share/omf/gnome-doc-make/gnome-doc-make-C.omf
   /usr/share/omf/gnome-doc-xslt/gnome-doc-xslt-C.omf
+  /usr/share/xml/gnome/xslt/common/theme.xsl
   /usr/share/xml/gnome/xslt/docbook/common/db-chunk.xsl
   /usr/share/xml/gnome/xslt/docbook/common/db-common.xsl
   /usr/share/xml/gnome/xslt/docbook/common/db-label.xsl
   /usr/share/xml/gnome/xslt/docbook/common/db-title.xsl
   /usr/share/xml/gnome/xslt/docbook/common/db-xref.xsl
-  /usr/share/xml/gnome/xslt/docbook/html/db2html-admon.xsl
   /usr/share/xml/gnome/xslt/docbook/html/db2html-autotoc.xsl
   /usr/share/xml/gnome/xslt/docbook/html/db2html-bibliography.xsl
   /usr/share/xml/gnome/xslt/docbook/html/db2html-block.xsl
@@ -184,6 +209,7 @@ Files included in the binary package:
   /usr/share/xml/gnome/xslt/docbook/html/db2html-ebnf.xsl
   /usr/share/xml/gnome/xslt/docbook/html/db2html-footnote.xsl
   /usr/share/xml/gnome/xslt/docbook/html/db2html-funcsynopsis.xsl
+  /usr/share/xml/gnome/xslt/docbook/html/db2html-index.xsl
   /usr/share/xml/gnome/xslt/docbook/html/db2html-info.xsl
   /usr/share/xml/gnome/xslt/docbook/html/db2html-inline.xsl
   /usr/share/xml/gnome/xslt/docbook/html/db2html-l10n.xsl
@@ -196,10 +222,12 @@ Files included in the binary package:
   /usr/share/xml/gnome/xslt/docbook/html/db2html-title.xsl
   /usr/share/xml/gnome/xslt/docbook/html/db2html-xref.xsl
   /usr/share/xml/gnome/xslt/docbook/html/db2html.xsl
+  /usr/share/xml/gnome/xslt/docbook/html/db2xhtml.xsl
   /usr/share/xml/gnome/xslt/docbook/omf/db2omf.xsl
   /usr/share/xml/gnome/xslt/docbook/utils/chunks.xsl
   /usr/share/xml/gnome/xslt/docbook/utils/credits.xsl
   /usr/share/xml/gnome/xslt/docbook/utils/figures.xsl
+  /usr/share/xml/gnome/xslt/docbook/utils/graphics.xsl
   /usr/share/xml/gnome/xslt/docbook/utils/ids.xsl
   /usr/share/xml/gnome/xslt/gettext/gettext.xsl
   /usr/share/xml/gnome/xslt/gettext/l10n-numbers.xsl
@@ -223,6 +251,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 0.12.0-1 -----
+Version bump for GNOME 2.20.
 
 ----- version 0.10.3-1 -----
 Version bump for GNOME 2.18.

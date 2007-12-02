@@ -1,5 +1,5 @@
 category: Doc Gnome
-requires: libxml2 libxslt python python-libxml2 scrollkeeper
+requires: libxml2 libxslt python python-libxml2 rarian
 sdesc: "GNOME documentation build tools and stylesheets"
 ldesc: "gnome-doc-utils is a collection of documentation utilities for
 the Gnome project.  Notably, it contains utilities for building
