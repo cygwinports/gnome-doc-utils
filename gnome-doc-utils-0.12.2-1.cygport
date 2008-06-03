@@ -1,0 +1,10 @@
+inherit python gnome2
+
+DESCRIPTION="GNOME documentation build tools and stylesheets"
+
+src_install() {
+	cd ${B}
+	cyginstall
+
+	python_optimize /usr/share/xml2po
+}
