@@ -2,6 +2,8 @@ inherit python gnome2
 
 DESCRIPTION="GNOME documentation build tools and stylesheets"
 
+ACLOCAL_FLAGS="-I tools"
+
 src_install() {
 	cd ${B}
 	cyginstall
