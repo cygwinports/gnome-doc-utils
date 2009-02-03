@@ -7,16 +7,16 @@ XSLT stylesheets that were once distributed with Yelp.  Starting with
 Gnome 2.8, Yelp will require gnome-doc-utils for the XSLT.
 
 Runtime requirements:
-  libxml2-2.7.2-1
+  libxml2-2.7.3-1
   libxslt-1.1.24-2
-  python-2.5.2-3
-  python-libxml2-2.7.2-1
+  python-2.5.4-1
+  python-libxml2-2.7.3-1
   rarian-0.8.1-1
 
 Build requirements:
   autoconf2.5-2.63-1
   automake1.10-1.10.1-2
-  cygport-0.4.2-1
+  cygport-0.4.3-1
   gawk-3.1.6-1
   gnome-common-2.24.0-1
   make-3.81-1
@@ -32,15 +32,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gnome-doc-utils-0.14.0-X-src.tar.bz2
+  unpack gnome-doc-utils-0.14.2-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gnome-doc-utils-0.14.0-X.cygport all
+  cygport ./gnome-doc-utils-0.14.2-X.cygport all
 
 This will create:
-  /usr/src/gnome-doc-utils-0.14.0-X-src.tar.bz2
-  /usr/src/gnome-doc-utils-0.14.0-X.tar.bz2
+  /usr/src/gnome-doc-utils-0.14.2-X-src.tar.bz2
+  /usr/src/gnome-doc-utils-0.14.2-X.tar.bz2
 
 -------------------------------------------
 
@@ -52,12 +52,12 @@ Files included in the binary package:
   /usr/lib/pkgconfig/gnome-doc-utils.pc
   /usr/lib/pkgconfig/xml2po.pc
   /usr/share/aclocal/gnome-doc-utils.m4
-  /usr/share/doc/gnome-doc-utils-0.14.0/AUTHORS
-  /usr/share/doc/gnome-doc-utils-0.14.0/COPYING
-  /usr/share/doc/gnome-doc-utils-0.14.0/ChangeLog
-  /usr/share/doc/gnome-doc-utils-0.14.0/INSTALL
-  /usr/share/doc/gnome-doc-utils-0.14.0/NEWS
-  /usr/share/doc/gnome-doc-utils-0.14.0/README
+  /usr/share/doc/gnome-doc-utils-0.14.2/AUTHORS
+  /usr/share/doc/gnome-doc-utils-0.14.2/COPYING
+  /usr/share/doc/gnome-doc-utils-0.14.2/ChangeLog
+  /usr/share/doc/gnome-doc-utils-0.14.2/INSTALL
+  /usr/share/doc/gnome-doc-utils-0.14.2/NEWS
+  /usr/share/doc/gnome-doc-utils-0.14.2/README
   /usr/share/gnome-doc-utils/gnome-doc-utils.make
   /usr/share/gnome-doc-utils/icons/hicolor/48x48/admon-bug.png
   /usr/share/gnome-doc-utils/icons/hicolor/48x48/admon-caution.png
@@ -253,6 +253,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 0.14.2-1 -----
+Version bump.
 
 ----- version 0.14.0-1 -----
 Version bump for GNOME 2.24.
