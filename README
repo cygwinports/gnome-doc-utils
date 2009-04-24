@@ -7,6 +7,7 @@ XSLT stylesheets that were once distributed with Yelp.  Starting with
 Gnome 2.8, Yelp will require gnome-doc-utils for the XSLT.
 
 Runtime requirements:
+  docbook-xml412-4.1.2-1
   libxml2-2.7.3-10
   libxslt-1.1.24-10
   python-2.5.4-10
@@ -16,11 +17,11 @@ Runtime requirements:
 Build requirements:
   autoconf2.5-2.63-10
   automake1.10-1.10.1-10
-  cygport-0.9.5-1
+  cygport-0.9.6-1
   gawk-3.1.6-2
-  gnome-common-2.24.0-1
+  gnome-common-2.26.0-1
   make-3.81-2
-  pkg-config-0.23a-2
+  pkg-config-0.23b-10
   sed-4.1.5-2
 
 Canonical website:
@@ -32,15 +33,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gnome-doc-utils-0.16.0-X-src.tar.bz2
+  unpack gnome-doc-utils-0.16.1-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gnome-doc-utils-0.16.0-X.cygport all
+  cygport ./gnome-doc-utils-0.16.1-X.cygport all
 
 This will create:
-  /usr/src/gnome-doc-utils-0.16.0-X-src.tar.bz2
-  /usr/src/gnome-doc-utils-0.16.0-X.tar.bz2
+  /usr/src/gnome-doc-utils-0.16.1-X-src.tar.bz2
+  /usr/src/gnome-doc-utils-0.16.1-X.tar.bz2
 
 -------------------------------------------
 
@@ -253,6 +254,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 0.16.1-1 -----
+Version bump.
 
 ----- version 0.16.0-1 -----
 Initial release for GNOME 2.26 on Cygwin 1.7.
