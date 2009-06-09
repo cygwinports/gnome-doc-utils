@@ -12,14 +12,16 @@ Runtime requirements:
   libxslt-1.1.24-10
   python-2.5.4-10
   python-libxml2-2.7.3-10
-  rarian-0.8.1-10
+  rarian-0.8.1-11
 
 Build requirements:
   autoconf2.5-2.63-10
-  automake1.10-1.10.1-10
+  automake1.10-1.10.2-10
   cygport-0.9.6-1
   gawk-3.1.6-2
-  gnome-common-2.26.0-1
+  gnome-common-2.26.0-2
+  intltool-0.40.6-1
+  libglib2.0-devel-2.20.3-1
   make-3.81-2
   pkg-config-0.23b-10
   sed-4.1.5-2
@@ -254,6 +256,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 0.16.1-2 -----
+Added workaround for parallel make issues in g-d-u.make.
 
 ----- version 0.16.1-1 -----
 Version bump.
