@@ -2,7 +2,10 @@ inherit python gnome2
 
 DESCRIPTION="GNOME documentation build tools and stylesheets"
 
-PATCH_URI="0.16-parallel-unsafe.patch"
+PATCH_URI="0.16-parallel-unsafe.patch
+           0.18.0-abs_top_srcdir.patch"
+
+DIFF_EXCLUDES="Makefile.in.in"
 
 ACLOCAL_FLAGS="-I tools"
 
