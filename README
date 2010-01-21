@@ -7,20 +7,20 @@ XSLT stylesheets that were once distributed with Yelp.  Starting with
 Gnome 2.8, Yelp will require gnome-doc-utils for the XSLT.
 
 Runtime requirements:
-  docbook-xml412-4.1.2-2
-  docbook-xml42-4.2-4
-  docbook-xml43-4.3-2
-  docbook-xml44-4.4-2
-  libxml2-2.7.4-1
-  libxslt-1.1.24-10
+  docbook-xml412
+  docbook-xml42
+  docbook-xml43
+  docbook-xml44
+  libxml2-2.7.6-1
+  libxslt-1.1.26-1
   python-2.5.4-10
-  python-libxml2-2.7.4-1
+  python-libxml2-2.7.6-1
   rarian-0.8.1-11
 
 Build requirements:
-  autoconf2.5-2.63-10
-  automake1.10-1.10.2-10
-  cygport-0.9.10-1
+  autoconf2.5-2.65-1
+  automake1.11-1.11.1-1
+  cygport-0.9.80-1
   gawk-3.1.7-1
   gnome-common-2.28.0-1
   intltool-0.40.6-1
@@ -37,19 +37,22 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gnome-doc-utils-0.18.0-X-src.tar.bz2
+  unpack gnome-doc-utils-0.18.1-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gnome-doc-utils-0.18.0-X.cygport all
+  cygport ./gnome-doc-utils-0.18.1-X.cygport all
 
 This will create:
-  /usr/src/gnome-doc-utils-0.18.0-X-src.tar.bz2
-  /usr/src/gnome-doc-utils-0.18.0-X.tar.bz2
+  /usr/src/gnome-doc-utils-0.18.1-X-src.tar.bz2
+  /usr/src/gnome-doc-utils-0.18.1-X.tar.bz2
 
 -------------------------------------------
 
 Port Notes:
+
+----- version 0.18.1-1 -----
+Version bump.
 
 ----- version 0.18.0-1 -----
 Version bump for GNOME 2.28.
