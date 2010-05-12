@@ -8,10 +8,3 @@ PATCH_URI="0.16-parallel-unsafe.patch
 DIFF_EXCLUDES="Makefile.in.in"
 
 ACLOCAL_FLAGS="-I tools"
-
-src_install() {
-	cd ${B}
-	cyginstall
-
-	python_optimize /usr/share/xml2po
-}
