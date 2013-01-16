@@ -1,0 +1,29 @@
+inherit python gnome2
+
+NAME="gnome-doc-utils"
+VERSION=0.20.10
+RELEASE=2
+CATEGORY="Doc GNOME"
+SUMMARY="GNOME documentation build tools and stylesheets"
+DESCRIPTION="gnome-doc-utils is a collection of documentation utilities for
+the Gnome project.  Notably, it contains utilities for building
+documentation and all auxiliary files in your source tree, and it
+contains the DocBook XSLT stylesheets that were once distributed with
+Yelp.  Starting with Gnome 2.8, Yelp will require gnome-doc-utils for
+the XSLT."
+
+PATCH_URI="0.18.0-abs_top_srcdir.patch"
+
+PKG_NAMES="${PN} xml2po"
+gnome_doc_utils_REQUIRES="docbook-xml412 docbook-xml42 docbook-xml43 docbook-xml44 gettext-devel libxml2 libxslt rarian xml2po"
+gnome_doc_utils_CONTENTS="--exclude=xml2po* usr/bin/ usr/share/"
+xml2po_SUMMARY="Extracts translatable strings from XML documents"
+xml2po_DESCRIPTION="xml2po is a simple Python program which extracts translatable
+content from free-form XML documents and outputs gettext compatible POT files."
+xml2po_REQUIRES="gettext-devel"
+xml2po_CONTENTS="usr/bin/xml2po ${PYTHON_SITELIB#/}/xml2po/
+                 usr/share/man/man1/xml2po.* usr/share/pkgconfig/xml2po.pc"
+
+DIFF_EXCLUDES="Makefile.in.in"
+
+ACLOCAL_FLAGS="-I tools"

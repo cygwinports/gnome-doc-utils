@@ -1,7 +1,0 @@
-category: Doc
-requires: gettext-devel python python-libxml2
-external-source: gnome-doc-utils
-sdesc: "Extracts translatable strings from XML documents"
-ldesc: "xml2po is a simple Python program which extracts translatable 
-content from free-form XML documents and outputs gettext compatible POT 
-files."

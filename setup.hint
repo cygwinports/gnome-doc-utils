@@ -1,9 +1,0 @@
-category: Doc Gnome
-requires: bash docbook-xml412 docbook-xml42 docbook-xml43 docbook-xml44 gettext-devel libxml2 libxslt rarian xml2po
-sdesc: "GNOME documentation build tools and stylesheets"
-ldesc: "gnome-doc-utils is a collection of documentation utilities for
-the Gnome project.  Notably, it contains utilities for building
-documentation and all auxiliary files in your source tree, and it
-contains the DocBook XSLT stylesheets that were once distributed with
-Yelp.  Starting with Gnome 2.8, Yelp will require gnome-doc-utils for
-the XSLT."
