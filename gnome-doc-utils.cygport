@@ -14,6 +14,8 @@ the XSLT."
 
 PATCH_URI="0.18.0-abs_top_srcdir.patch"
 
+ARCH=noarch
+
 PKG_NAMES="${PN} xml2po"
 gnome_doc_utils_REQUIRES="docbook-xml412 docbook-xml42 docbook-xml43 docbook-xml44 gettext-devel libxml2 libxslt rarian xml2po"
 gnome_doc_utils_CONTENTS="--exclude=xml2po* usr/bin/ usr/share/"
